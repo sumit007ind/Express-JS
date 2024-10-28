@@ -9,7 +9,8 @@ app.get('/', (req, res) => {
 
 
 app.post('/items' , (req,res) => {
-    res.send('putting responce');
+    // res.send('putting responce');
+    res.json({x:1,y:2,z:3})
 })
 
 app.put('/items/:id' , (req,res) => {
