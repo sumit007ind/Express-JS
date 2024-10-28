@@ -12,11 +12,11 @@ app.put('/items' , (req,res) => {
 })
 
 app.post('/items/:id' , (req,res) => {
-    res.send('putting responce');
+    res.send('Posting responce');
 })
 
 app.delete('/items/:id' , (req,res) => {
-    res.send('putting responce');
+    res.send('Deleting responce');
 })
 
 
