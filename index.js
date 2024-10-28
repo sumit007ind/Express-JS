@@ -7,12 +7,12 @@ app.get('/', (req, res) => {
 })
 
 
-app.put('/items' , (req,res) => {
+app.post('/items' , (req,res) => {
     res.send('putting responce');
 })
 
-app.post('/items/:id' , (req,res) => {
-    res.send('Posting responce');
+app.put('/items/:id' , (req,res) => {
+    res.send(' responce');
 })
 
 app.delete('/items/:id' , (req,res) => {
