@@ -2,24 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-  // res.send('got a git request!')
-  res.sendFile('./dummy.html' , {root:__dirname})
-})
-
-
-app.post('/items' , (req,res) => {
-    // res.send('putting responce');
-    res.json({x:1,y:2,z:3})
-})
-
-app.put('/items/:id' , (req,res) => {
-    res.send(' responce');
-})
-
-app.delete('/items/:id' , (req,res) => {
-    res.send('Deleting responce');
-})
+const item = require('./routes/item');
+app.use('./api ' , item);
 
 
 
